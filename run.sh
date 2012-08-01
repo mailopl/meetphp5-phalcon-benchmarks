@@ -32,6 +32,14 @@ echo Yii framework
 echo ------------------------
 ab -q -n 1000 -c 5 http://localhost/benchmark/yii/index.php?r=say/hello | grep "Requests per second"
 
+
+echo
+echo
+echo ------------------------
+echo YAF
+echo ------------------------
+ab -q -n 1000 -c 5 http://localhost/benchmark/yaf/ | grep "Requests per second"
+
 echo
 echo
 echo ------------------------

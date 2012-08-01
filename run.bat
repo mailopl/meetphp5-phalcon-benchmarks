@@ -32,6 +32,14 @@ ab -q  -n 1000 -c 5 http://localhost/benchmark/codeigniter/index.php/say/hello |
 @ECHO ------------------------
 ab -q -n 1000 -c 5 http://localhost/benchmark/yii/index.php?r=say/hello | grep "Requests per second"
 
+
+@ECHO.
+@ECHO.
+@ECHO ------------------------
+@ECHO YAF 
+@ECHO ------------------------
+ab -q -n 1000 -c 5 http://localhost/benchmark/yaf/ | grep "Requests per second"
+
 @ECHO.
 @ECHO.
 @ECHO ------------------------
